@@ -1,0 +1,46 @@
+#
+# Copyright (C) 2016+ AzerothCore <www.azerothcore.org>, released under GNU AGPL v3 license: https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE-AGPL3
+#
+
+[worldserver]
+
+########################################
+# mod-bg-item-reward configuration
+########################################
+#
+#    MyModule.Enable
+#        Description: Enables the module.
+#        Default:     0 - Disabled
+#                     1 - Enabled
+#
+
+ModBGItemReward.Enable = 0
+
+#
+#
+#    ModBGItemReward.AVWinItems
+#    ModBGItemReward.ABWinItems
+#    ModBGItemReward.WSGWinItems
+#    ModBGItemReward.IOCWinItems
+#    ModBGItemReward.SOTAWinItems
+#    ModBGItemReward.AVDefeatItems
+#    ModBGItemReward.ABDefeatItems
+#    ModBGItemReward.WSGDefeatItems
+#    ModBGItemReward.IOCDefeatItems
+#    ModBGItemReward.SOTADefeatItems
+#        Description: Gives item rewards on battleground victories and defeats.
+#        Default:     "" - None
+#        Example      "20558:3" - Warsong Gulch Mark of Honor 3x
+#
+
+ModBGItemReward.AVWinItems = ""
+ModBGItemReward.ABWinItems = ""
+ModBGItemReward.WSGWinItems = ""
+ModBGItemReward.IOCWinItems = ""
+ModBGItemReward.SOTAWinItems = ""
+ModBGItemReward.AVDefeatItems = ""
+ModBGItemReward.ABDefeatItems = ""
+ModBGItemReward.WSGDefeatItems = ""
+ModBGItemReward.IOCDefeatItems = ""
+ModBGItemReward.SOTADefeatItems = ""
+
