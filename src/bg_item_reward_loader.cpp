@@ -8,4 +8,3 @@ void Addmod_bg_item_rewardScripts()
 {
     Addmod_bg_item_reward_bgScripts();
 }
-
