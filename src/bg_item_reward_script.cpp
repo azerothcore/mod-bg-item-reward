@@ -23,8 +23,14 @@ public:
                 AddItems(player, "ModBGItemReward.AV" + status + "Items");
                 break;
             case 489: // WSG
+            {
+                if (winnerTeamId == TEAM_NEUTRAL)
+                {
+                    status = "Tie";
+                }
                 AddItems(player, "ModBGItemReward.WSG" + status + "Items");
                 break;
+            }
             case 529: // AB
                 AddItems(player, "ModBGItemReward.AB" + status + "Items");
                 break;

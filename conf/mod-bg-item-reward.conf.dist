@@ -28,6 +28,7 @@ ModBGItemReward.Enable = 0
 #    ModBGItemReward.WSGDefeatItems
 #    ModBGItemReward.IOCDefeatItems
 #    ModBGItemReward.SOTADefeatItems
+#    ModBGItemReward.WSGTieItems
 #        Description: Gives item rewards on battleground victories and defeats.
 #        Default:     "" - None
 #        Example      "20558:3" - Warsong Gulch Mark of Honor 3x
@@ -43,3 +44,4 @@ ModBGItemReward.ABDefeatItems = ""
 ModBGItemReward.WSGDefeatItems = ""
 ModBGItemReward.IOCDefeatItems = ""
 ModBGItemReward.SOTADefeatItems = ""
+ModBGItemReward.WSGTieItems = ""
