@@ -14,7 +14,7 @@
 #                     1 - Enabled
 #
 
-ModBGItemReward.Enable = 0
+ModBGItemReward.Enable = 1
 
 #
 #
@@ -34,14 +34,23 @@ ModBGItemReward.Enable = 0
 #        Example      "20558:3" - Warsong Gulch Mark of Honor 3x
 #
 
-ModBGItemReward.AVWinItems = ""
-ModBGItemReward.ABWinItems = ""
-ModBGItemReward.WSGWinItems = ""
-ModBGItemReward.IOCWinItems = ""
-ModBGItemReward.SOTAWinItems = ""
-ModBGItemReward.AVDefeatItems = ""
-ModBGItemReward.ABDefeatItems = ""
-ModBGItemReward.WSGDefeatItems = ""
-ModBGItemReward.IOCDefeatItems = ""
-ModBGItemReward.SOTADefeatItems = ""
-ModBGItemReward.WSGTieItems = ""
+ModBGItemReward.AVWinItems = "20560:5"
+ModBGItemReward.ABWinItems = "20559:5"
+ModBGItemReward.WSGWinItems = "20558:5"
+ModBGItemReward.IOCWinItems = "47395:5"
+ModBGItemReward.SOTAWinItems = "42425:5"
+ModBGItemReward.EOTSWinItems = "29024:5"
+
+ModBGItemReward.AVDefeatItems = "20560:1"
+ModBGItemReward.ABDefeatItems = "20559:1"
+ModBGItemReward.WSGDefeatItems = "20558:1"
+ModBGItemReward.IOCDefeatItems = "47395:1"
+ModBGItemReward.SOTADefeatItems = "42425:1"
+ModBGItemReward.EOTSWinItems = "29024:1"
+
+ModBGItemReward.AVTieItems = "20560:3"
+ModBGItemReward.WSGTieItems = "20558:3"
+ModBGItemReward.IOCTieItems = "47395:3"
+ModBGItemReward.ABTieItems = "20559:3"
+ModBGItemReward.SOTATieItems = "42425:3"
+ModBGItemReward.EOTSWinItems = "29024:3"
