@@ -15,52 +15,38 @@ public:
 
     void OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId) override
     {
-        std::string status = winnerTeamId == player->GetBgTeamId() ? "Win" : "Defeat";
+        std::string status;
+
+        if (winnerTeamId == TEAM_NEUTRAL)
+        {
+            status = "Tie";
+        }
+        else {
+            status = winnerTeamId == player->GetBgTeamId() ? "Win" : "Defeat";
+        }
 
         switch (bg->GetMapId())
         {
             case 30:  // AV
-                if (winnerTeamId == TEAM_NEUTRAL)
-                {
-                    status = "Tie";
-                }
+            {
                 AddItems(player, "ModBGItemReward.AV" + status + "Items");
                 break;
+            }
             case 489: // WSG
             {
-                if (winnerTeamId == TEAM_NEUTRAL)
-                {
-                    status = "Tie";
-                }
                 AddItems(player, "ModBGItemReward.WSG" + status + "Items");
                 break;
             }
             case 529: // AB
-                if (winnerTeamId == TEAM_NEUTRAL)
-                {
-                    status = "Tie";
-                }
                 AddItems(player, "ModBGItemReward.AB" + status + "Items");
                 break;
             case 566: // EOTS
-                if (winnerTeamId == TEAM_NEUTRAL)
-                {
-                    status = "Tie";
-                }
                 AddItems(player, "ModBGItemReward.EOTS" + status + "Items");
                 break;
             case 607: // SOTA
-                if (winnerTeamId == TEAM_NEUTRAL)
-                {
-                    status = "Tie";
-                }
                 AddItems(player, "ModBGItemReward.SOTA" + status + "Items");
                 break;
             case 628: // IC
-                if (winnerTeamId == TEAM_NEUTRAL)
-                {
-                    status = "Tie";
-                }
                 AddItems(player, "ModBGItemReward.WSG" + status + "Items");
                 break;
         }
