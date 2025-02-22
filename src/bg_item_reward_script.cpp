@@ -11,7 +11,9 @@
 class BgItemRewardScript : public BGScript
 {
 public:
-    BgItemRewardScript() : BGScript("mod_bg_item_reward_bg_script") { }
+    BgItemRewardScript() : BGScript("mod_bg_item_reward_bg_script", {
+        ALLBATTLEGROUNDHOOK_ON_BATTLEGROUND_END_REWARD
+    }) { }
 
     void OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId) override
     {
